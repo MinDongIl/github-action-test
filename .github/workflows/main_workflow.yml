@@ -18,4 +18,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello
-        run: echo "pr test"
+        run: echo "pr test main -> develop"
