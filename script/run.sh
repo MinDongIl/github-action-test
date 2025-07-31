@@ -1,8 +1,8 @@
 #!/bin/bash
 
-APP_NAME = next-0.0.1-SNAPSHOT.jar
-APP_DIR =/home/ec2-user/app/build/libs
-LOG_DIR =/home/ec2-user/app/log
+APP_NAME=next-0.0.1-SNAPSHOT.jar
+APP_DIR=/home/ec2-user/app/build/libs
+LOG_DIR=/home/ec2-user/app/log
 
 DATE=$(date +"%Y%m%d")
 
