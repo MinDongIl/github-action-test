@@ -13,19 +13,19 @@ name: Main_Workflows
 #    branches:
 #      - develop
 
-#수동 실행을 위한 트리거
-on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: '배포 환경'
-        required: true
-        default: 'staging'
-
-#jobs
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: print hello
-        run: echo "pr test main -> develop"
+##수동 실행을 위한 트리거
+#on:
+#  workflow_dispatch:
+#    inputs:
+#      environment:
+#        description: '배포 환경'
+#        required: true
+#        default: 'staging'
+#
+##jobs
+#jobs:
+#  test:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: print hello
+#        run: echo "pr test main -> develop"
