@@ -7,10 +7,19 @@ name: Main_Workflows
 #    branches: #main brach 대상으로 push 이벤트가 발생하면 job이 수행 됨.
 #      - main
 
+##pr 생성 또는 업데이트 main -> 다른 브랜치
+#on:
+#  pull_request:
+#    branches:
+#      - develop
+
 on:
-  pull_request:
-    branches:
-      - develop
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: '배포 환경'
+        required: true
+        default: 'staging'
 
 #jobs
 jobs:
