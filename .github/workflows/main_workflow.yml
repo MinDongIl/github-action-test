@@ -1,11 +1,16 @@
 #워크 플로우 이름 지정
 name: Main_Workflows
 
-#워크 플로우의 특징 정의
+##워크 플로우의 특징 정의
+#on:
+#  push:
+#    branches: #main brach 대상으로 push 이벤트가 발생하면 job이 수행 됨.
+#      - main
+
 on:
-  push:
+  pull_request:
     branches:
-      - main
+      - develop
 
 #jobs
 jobs:
